@@ -24,7 +24,6 @@ public class FeeMapperImpl implements Mapper<FeeDto, Fee> {
 	public Fee toEntity(FeeDto dto) {
 		return Fee.builder()
 	    		.uuid(UUID.randomUUID().toString())
-				.uuid(dto.getUuid())
 				.type(dto.getType())
 				.subCategory(dto.getSubCategory())
 				.frequency(dto.getFrequency())
